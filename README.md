@@ -45,4 +45,12 @@ After training, the model (`Covid_Radiography_Detection_model.h5`) and label enc
 - Simple and clean UI
 
 ---
-![main](assets/Covid_radiographymain.png)
+
+## 🩺 COVID Chest X-Ray Detection Web App Preview
+
+![main](assets/Covid_radiography_main.png)
+
+
+![main](assets/Covid_radiography_result.png)
+
+---
