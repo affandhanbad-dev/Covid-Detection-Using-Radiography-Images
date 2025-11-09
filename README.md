@@ -1,5 +1,5 @@
 
-# 🩺 COVID-19 Chest X-Ray Detection using CNN & Flask
+# 🩺 COVID-19 Chest X-Ray Detection using CNN, Flask & Docker
 
 This project is a deep learning web application that detects **COVID-19**, **Viral Pneumonia**, and **Normal** chest X-rays using a **Convolutional Neural Network (CNN)** trained on the [COVID-19 Radiography Database](https://www.kaggle.com/datasets/tawsifurrahman/covid19-radiography-database).
 
@@ -12,7 +12,7 @@ This project is a deep learning web application that detects **COVID-19**, **Vir
 - **Dataset:** COVID-19 Radiography Database (Kaggle)  
 - **Frontend:** HTML + CSS (Flask Templates)  
 - **Backend:** Flask Web Framework (Python)  
-- **Deployment:** Local Flask server  
+- **Deployment:** Run locally with Flask or easily via Docker using the prebuilt image on Docker Hub
 
 ---
 
