@@ -8,8 +8,8 @@ from werkzeug.utils import secure_filename
 
 app = Flask(__name__)
 
-model = load_model('C:/Users/Affan/PycharmProjects/Covid_Detection_app/Covid_Radiography_Detection_model.h5')  # Replace with your model path
-le = pickle.load(open("C:/Users/Affan/PycharmProjects/Covid_Detection_app/Covid_Radio_label_encoder.pkl", 'rb'))  # Load the label encoder
+model = load_model('Covid_Radiography_Detection_model.h5')  # Replace with your model path
+le = pickle.load(open("Covid_Radio_label_encoder.pkl", 'rb'))  # Load the label encoder
 
 UPLOAD_FOLDER = 'uploads'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
