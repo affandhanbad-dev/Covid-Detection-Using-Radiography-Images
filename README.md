@@ -46,6 +46,14 @@ After training, the model (`Covid_Radiography_Detection_model.h5`) and label enc
 
 ---
 
+## 🐳 Run with Docker
+
+This project is available as a Docker image for easy deployment.
+
+### Pull the Docker Image
+
+docker pull 4ffan/covidradiography:latest
+
 ## 🩺 COVID Chest X-Ray Detection Web App Preview
 
 ![main](assets/Covid_radiography_main.png)
