@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid Chest X-Ray Detection</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #4e73df, #1cc88a);
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background: #fff;
+            border-radius: 20px;
+            padding: 30px 25px;
+            width: 90%;
+            max-width: 360px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+
+        h1 {
+            color: #2e59d9;
+            font-size: 1.6em;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #555;
+            font-size: 0.9em;
+            margin-bottom: 20px;
+        }
+
+        input[type="file"] {
+            margin-bottom: 15px;
+            background: #f8f9fc;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            width: 100%;
+            cursor: pointer;
+        }
+
+        input[type="submit"] {
+            background: linear-gradient(135deg, #1cc88a, #17a673);
+            border: none;
+            padding: 10px 20px;
+            border-radius: 10px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            width: 100%;
+            transition: 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background: linear-gradient(135deg, #17a673, #13855c);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>COVID X-Ray Detection</h1>
+        <p>Upload a Chest X-Ray Image<br>(COVID | Viral Pneumonia | Normal)</p>
+        <form action="{{ url_for('upload_file') }}" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" accept="image/*" required>
+            <input type="submit" value="Analyze Image">
+        </form>
+    </div>
+</body>
+</html>
